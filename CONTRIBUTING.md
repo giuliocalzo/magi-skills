@@ -1,4 +1,4 @@
-# Contributing to skill-lab
+# Contributing to magi-skills
 
 Thanks for your interest in contributing! This repo is a collection of Cursor Agent Skills, so most contributions are either a new skill or an improvement to an existing one.
 

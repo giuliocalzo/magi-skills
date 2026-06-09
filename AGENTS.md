@@ -4,7 +4,7 @@ Guidance for AI agents working in this repository.
 
 ## Repository purpose
 
-`skill-lab` is a skills distribution repository — a collection of [Cursor Agent Skills](https://docs.cursor.com). Skills live under `skills/`, each in its own kebab-case directory defined by a `SKILL.md` file with YAML front matter (`name`, `description`) followed by the agent instructions.
+`magi-skills` is a skills distribution repository — a collection of [Cursor Agent Skills](https://docs.cursor.com). Skills live under `skills/`, each in its own kebab-case directory defined by a `SKILL.md` file with YAML front matter (`name`, `description`) followed by the agent instructions.
 
 ## Commit conventions
 

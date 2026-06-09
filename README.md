@@ -1,14 +1,15 @@
-# skill-lab
+# magi-skills
 
-A collection of [Cursor Agent Skills](https://docs.cursor.com) — reusable, model-agnostic workflows that the Cursor agent can read and follow on demand.
+![MAGI](magi.png)
 
-This is a **skills distribution repository** — a curated collection of skills you import into your own projects. Each skill lives under `skills/{skill-name}/` and is defined by a `SKILL.md` file with YAML front matter (`name`, `description`) followed by the instructions the agent executes.
+A collection of **MAGI** skills for Cursor — Evangelion-style workflows that reach consensus across three independent model agents (MELCHIOR/ChatGPT, BALTHASAR/Opus, CASPER/Nemotron-or-Gemini). Each skill lives under `skills/{skill-name}/` and is defined by a `SKILL.md` file with YAML front matter (`name`, `description`) followed by the instructions the agent executes.
 
 ## Skills
 
 | Skill | Description |
 | --- | --- |
 | [`magi-pr-review`](skills/magi-pr-review/SKILL.md) | Review and fix pull requests using an Evangelion MAGI-style workflow with three independent model agents (ChatGPT, Opus, and Nemotron/Gemini), synthesizing findings via critical consensus before completion. |
+| [`magi-feature-build`](skills/magi-feature-build/SKILL.md) | Design and implement a new feature using the same MAGI-style workflow: three independent model agents produce competing designs, synthesize one plan, implement it, and run a critical consensus loop before completion. |
 
 ## Usage
 
@@ -27,7 +28,7 @@ The simplest way to use skills. No server setup required.
 1. Open Cursor Settings (`Cmd+Shift+J`)
 2. Go to the **Rules** tab
 3. Click **Add Rule** → **Remote Rule (GitHub)**
-4. Enter: `https://github.com/giuliocalzo/skill-lab`
+4. Enter: `https://github.com/giuliocalzo/magi-skills`
 5. Select the skills you want to import
 
 Skills are copied to your `.cursor/skills/` directory and automatically discovered.

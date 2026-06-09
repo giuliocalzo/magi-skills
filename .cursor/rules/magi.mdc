@@ -2,9 +2,9 @@
 alwaysApply: true
 ---
 
-## Cursor Skills Repository
+## MAGI Skills Repository
 
-This is a **skills distribution repository** - a curated collection of skills for Cursor AI agents.
+This is a **skills distribution repository** - a curated collection of MAGI multi-model skills for Cursor AI agents. MAGI skills reach consensus across three independent model agents (MELCHIOR/ChatGPT, BALTHASAR/Opus, CASPER/Nemotron-or-Gemini).
 
 ### Repository Purpose
 

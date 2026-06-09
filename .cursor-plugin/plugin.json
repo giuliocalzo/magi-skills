@@ -1,0 +1,12 @@
+{
+  "name": "magi",
+  "displayName": "MAGI Skills",
+  "version": "0.1.0",
+  "description": "MAGI: Evangelion-style multi-model Cursor skills that reach consensus across three independent agents (ChatGPT, Opus, Nemotron/Gemini) for PR review and feature build.",
+  "author": {
+    "name": "Giulio Calzolari",
+    "email": "giuliocalzo@users.noreply.github.com"
+  },
+  "license": "WTFPL",
+  "keywords": ["cursor", "plugin", "skills", "magi", "multi-model", "pr-review", "feature-build"]
+}
