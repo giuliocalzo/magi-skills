@@ -4,7 +4,7 @@ Thanks for your interest in contributing! This repo is a collection of Cursor Ag
 
 ## Adding a new skill
 
-1. Create a directory named after the skill in kebab-case (e.g. `my-skill/`).
+1. Create a directory named after the skill in kebab-case under `.cursor/skills/` (e.g. `.cursor/skills/my-skill/`).
 2. Add a `SKILL.md` with YAML front matter and instructions:
 
 ```markdown
