@@ -20,17 +20,17 @@ The agent matches the request against each skill's `description`, reads the rele
 
 ## Installation
 
-Import skills from this repo into your projects using any of these methods:
+### Cursor Settings (Cursor 2.4+)
 
-1. **Cursor Settings (recommended)** — add this repo as a Remote Rule from GitHub.
-2. **Manual copy** — clone the repo and copy the skills into your project (Cursor discovers skills under `.cursor/skills/`):
+The simplest way to use skills. No server setup required.
 
-```bash
-git clone git@github.com:giuliocalzo/skill-lab.git
-cp -R skill-lab/skills/* /path/to/your-project/.cursor/skills/
-```
+1. Open Cursor Settings (`Cmd+Shift+J`)
+2. Go to the **Rules** tab
+3. Click **Add Rule** → **Remote Rule (GitHub)**
+4. Enter: `https://github.com/giuliocalzo/skill-lab`
+5. Select the skills you want to import
 
-3. **MCP server (advanced)** — expose the skills globally via an MCP server.
+Skills are copied to your `.cursor/skills/` directory and automatically discovered.
 
 ## Adding a skill
 
