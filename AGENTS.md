@@ -4,7 +4,7 @@ Guidance for AI agents working in this repository.
 
 ## Repository purpose
 
-`skill-lab` is a collection of [Cursor Agent Skills](https://docs.cursor.com). Skills live under `.cursor/skills/`, each in its own kebab-case directory defined by a `SKILL.md` file with YAML front matter (`name`, `description`) followed by the agent instructions.
+`skill-lab` is a collection of [Cursor Agent Skills](https://docs.cursor.com). Skills live under `.cursor/skills-cursor/`, each in its own kebab-case directory defined by a `SKILL.md` file with YAML front matter (`name`, `description`) followed by the agent instructions.
 
 ## Commit conventions
 
@@ -32,15 +32,15 @@ Format:
 ### Examples
 
 ```
-feat(magi-pr-review): add critical agreement loop
-fix(magi-pr-review): correct CASPER fallback to Gemini
+feat(<skill-name>): add a new capability to the skill
+fix(<skill-name>): correct a step in the skill's workflow
 docs(repo): add contributing guide
 chore(repo): add gitignore and license
 ```
 
 ## Skill authoring rules
 
-- A new skill MUST live under `.cursor/skills/<skill-name>/` and include a `SKILL.md` with `name` and `description` front matter.
+- A new skill MUST live under `.cursor/skills-cursor/<skill-name>/` and include a `SKILL.md` with `name` and `description` front matter.
 - The `name` in front matter MUST match the directory name.
 - Keep `description` action-oriented and include phrases users are likely to say.
 - When adding or removing a skill, update the skills table in `README.md` in the same commit.
