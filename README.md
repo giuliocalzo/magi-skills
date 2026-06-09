@@ -2,13 +2,13 @@
 
 A collection of [Cursor Agent Skills](https://docs.cursor.com) — reusable, model-agnostic workflows that the Cursor agent can read and follow on demand.
 
-Skills live under `.cursor/skills-cursor/`. Each skill is its own folder containing a `SKILL.md` file with YAML front matter (`name`, `description`) followed by the instructions the agent executes.
+This is a **skills distribution repository** — a curated collection of skills you import into your own projects. Each skill lives under `skills/{skill-name}/` and is defined by a `SKILL.md` file with YAML front matter (`name`, `description`) followed by the instructions the agent executes.
 
 ## Skills
 
 | Skill | Description |
 | --- | --- |
-| [`magi-pr-review`](.cursor/skills-cursor/magi-pr-review/SKILL.md) | Review and fix pull requests using an Evangelion MAGI-style workflow with three independent model agents (ChatGPT, Opus, and Nemotron/Gemini), synthesizing findings via critical consensus before completion. |
+| [`magi-pr-review`](skills/magi-pr-review/SKILL.md) | Review and fix pull requests using an Evangelion MAGI-style workflow with three independent model agents (ChatGPT, Opus, and Nemotron/Gemini), synthesizing findings via critical consensus before completion. |
 
 ## Usage
 
@@ -20,18 +20,21 @@ The agent matches the request against each skill's `description`, reads the rele
 
 ## Installation
 
-Cursor discovers skills under `.cursor/skills/`. To use these skills in a project, make this repo's skills available at that path — for example, clone it and symlink:
+Import skills from this repo into your projects using any of these methods:
+
+1. **Cursor Settings (recommended)** — add this repo as a Remote Rule from GitHub.
+2. **Manual copy** — clone the repo and copy the skills into your project (Cursor discovers skills under `.cursor/skills/`):
 
 ```bash
 git clone git@github.com:giuliocalzo/skill-lab.git
-ln -s "$(pwd)/skill-lab/.cursor/skills-cursor" /path/to/your-project/.cursor/skills
+cp -R skill-lab/skills/* /path/to/your-project/.cursor/skills/
 ```
 
-Or copy the individual skill folders into your project's `.cursor/skills/` (or your personal `~/.cursor/skills/`).
+3. **MCP server (advanced)** — expose the skills globally via an MCP server.
 
 ## Adding a skill
 
-1. Create a new directory named after the skill (kebab-case) under `.cursor/skills-cursor/`.
+1. Create a new directory named after the skill (kebab-case) under `skills/`.
 2. Add a `SKILL.md` with front matter:
 
 ```markdown

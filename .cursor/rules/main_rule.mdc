@@ -1,0 +1,49 @@
+---
+alwaysApply: true
+---
+
+## Cursor Skills Repository
+
+This is a **skills distribution repository** - a curated collection of skills for Cursor AI agents.
+
+### Repository Purpose
+
+Users import skills from this repo into their projects via:
+1. **Cursor Settings** (recommended) - Add as Remote Rule from GitHub
+2. **Manual copy** - Clone and copy `skills/` to `.cursor/skills/`
+3. **MCP Server** (advanced) - Global skill access
+
+### When Working in This Repo
+
+**Creating/Editing Skills:**
+- Each skill lives in `skills/{skill-name}/`
+- Skill must have `SKILL.md` with YAML frontmatter (`name`, `description`)
+- Optional: `scripts/`, `references/`, `LICENSE.txt`
+
+**Maintaining the Repo:**
+- Standard Cursor behavior - read files, write code, fix bugs
+- Keep `README.md` updated with new skills
+- Follow the Conventional Commits rules in `AGENTS.md` (scope = skill name)
+
+### Skill Structure
+
+```
+skills/{name}/
+├── SKILL.md           # Required - Core instructions
+├── scripts/           # Optional - Helper scripts
+├── references/        # Optional - Supporting docs
+└── LICENSE.txt        # Optional - Skill license
+```
+
+### SKILL.md Format
+
+```markdown
+---
+name: skill-name
+description: Brief description for discovery. Explain when to use.
+---
+
+# Skill Name
+
+Detailed instructions for the agent...
+```
