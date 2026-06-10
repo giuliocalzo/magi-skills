@@ -1,5 +1,5 @@
 ---
-name: magi-feature-build
+name: magi-build-feature
 description: Implement a new feature using an Evangelion MAGI-style workflow with three independent model agents: ChatGPT, Opus, and Nemotron. Use when the user asks for a MAGI feature build, multi-model feature implementation, consensus-based design-and-build workflow, or wants a new feature implemented with cross-model review.
 ---
 
