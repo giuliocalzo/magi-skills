@@ -16,7 +16,7 @@ Format:
 <type>(<scope>): <description>
 ```
 
-- **`<scope>` is REQUIRED and MUST be the skill name** (the skill's directory / `name` in its front matter) for any change that adds or modifies a skill. Use the kebab-case skill name, e.g. `magi-pr-review`.
+- **`<scope>` is REQUIRED and MUST be the skill name** (the skill's directory / `name` in its front matter) for any change that adds or modifies a skill. Use the kebab-case skill name, e.g. `magi-review-pr`.
 - For repo-wide changes that are not tied to a single skill, use a `repo` scope (e.g. `chore(repo): update gitignore`).
 - Each commit MUST be scoped to a single skill. Do not mix changes to multiple skills in one commit — split them into one commit per skill.
 
