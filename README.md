@@ -33,6 +33,21 @@ The simplest way to use skills. No server setup required.
 
 Skills are copied to your `.cursor/skills/` directory and automatically discovered.
 
+### Manual (symlink)
+
+To use the skills globally while keeping them in sync with this repo, clone it and symlink each skill into your global `~/.cursor/skills/` directory:
+
+```bash
+git clone https://github.com/giuliocalzo/magi-skills.git
+cd magi-skills
+
+for skill in skills/*/; do
+  ln -sfn "$(pwd)/${skill%/}" "$HOME/.cursor/skills/$(basename "$skill")"
+done
+```
+
+Because they are symlinks, edits in the repo apply globally without re-copying.
+
 ## Adding a skill
 
 1. Create a new directory named after the skill (kebab-case) under `skills/`.
