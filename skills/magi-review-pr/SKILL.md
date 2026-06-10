@@ -1,5 +1,5 @@
 ---
-name: magi-pr-review
+name: magi-review-pr
 description: Review and fix pull requests using an Evangelion MAGI-style workflow with three independent model agents: ChatGPT, Opus, and Nemotron. Use when the user asks for a MAGI PR review, multi-model PR review, consensus-based code review, or review-and-fix workflow for a pull request.
 ---
 
