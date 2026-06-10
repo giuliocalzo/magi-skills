@@ -73,9 +73,16 @@ If the environment lists only a fixed set of supported model slugs, use only tho
    - If fewer than two MAGI agents approve, synthesize the objections, fix them, and repeat the critical review loop.
    - If quorum cannot be reached after a focused retry, sort the remaining disagreements by severity, confidence, blast radius, and reversibility, then ask the user for a decision.
 
-8. **Validation and final response**
+8. **Validation**
    - Run the most relevant tests, linters, or CI checks available locally.
-   - Final response must include: what was fixed, what validation ran, remaining risks, and any unresolved MAGI disagreements.
+
+9. **Push changes**
+   - Once the fixes are approved by quorum and validation passes, commit and push the changes to the **same repository and branch** as the pull request under review.
+   - Follow the repository's commit conventions and never force-push or rewrite history unless the user explicitly requests it.
+   - Do not open a new branch or a separate pull request; the goal is to update the existing PR in place.
+
+10. **Final response**
+   - Final response must include: what was fixed, what validation ran, the commit/push result, remaining risks, and any unresolved MAGI disagreements.
 
 ## Report Template
 
