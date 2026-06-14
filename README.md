@@ -10,6 +10,7 @@ A collection of **MAGI** skills for Cursor — Evangelion-style workflows that r
 | --- | --- |
 | [`magi-review-pr`](skills/magi-review-pr/SKILL.md) | Review and fix pull requests using an Evangelion MAGI-style workflow with three independent model agents (ChatGPT, Opus, and Nemotron/Gemini), synthesizing findings via critical consensus before completion. |
 | [`magi-build-feature`](skills/magi-build-feature/SKILL.md) | Design and implement a new feature using the same MAGI-style workflow: three independent model agents produce competing designs, synthesize one plan, implement it, and run a critical consensus loop before completion. |
+| [`magi-query`](skills/magi-query/SKILL.md) | Answer a question or research query with the MAGI workflow: three independent model agents each write their own answer, cross-review and discuss the documents, then reconcile them into a single most-accurate answer returned to the user. |
 
 ## Usage
 
