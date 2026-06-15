@@ -29,7 +29,7 @@ If the environment lists only a fixed set of supported model slugs, use only tho
 
 1. **Gather PR context**
    - Identify the PR, base branch, current branch, local changes, CI status, review comments, and the full diff.
-   - Create or reuse a dedicated `git worktree` for the PR review and implementation. Run MAGI planning, review, fixes, and validation from that worktree unless the user explicitly asks to work in the current checkout.
+   - Always create a dedicated `git worktree` with the PR's related branch checked out before starting the review, unless the request explicitly says otherwise (for example, asks to work in the current checkout). Run MAGI planning, review, fixes, and validation from that worktree.
    - Before creating the worktree, inspect `git status` in the current checkout and avoid moving, deleting, or reverting unrelated local changes.
    - If using GitHub, use `gh` for PR data and run `gh` commands outside the sandbox. If using GitLab, use `glab` for merge request data and run `glab` commands outside the sandbox. For other systems, only check out the PR/branch in the worktree and review the local diff unless the user explicitly provides another supported tool.
    - Do not implement until the planning and review phases have both completed.
