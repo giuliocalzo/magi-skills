@@ -50,7 +50,7 @@ Each agent writes only to its own `docs/magi/<magi-name>/` directory. Use these 
 1. **Gather feature context**
    - Clarify the feature's goal, scope, users, acceptance criteria, and any constraints (performance, deadlines, compatibility).
    - Identify the relevant codebase areas, existing patterns, frameworks, build/test commands, and integration points.
-   - Create or reuse a dedicated `git worktree` or feature branch for the work. Run MAGI design, implementation, and validation from there unless the user explicitly asks to work in the current checkout.
+   - Always create a dedicated `git worktree` with a new related feature branch before starting the build, unless the request explicitly says otherwise (for example, asks to work in the current checkout). Run MAGI design, implementation, and validation from that worktree.
    - Before creating the worktree, inspect `git status` in the current checkout and avoid moving, deleting, or reverting unrelated local changes.
    - Do not implement until the design and review phases have both completed.
 
