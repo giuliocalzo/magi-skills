@@ -56,6 +56,7 @@ Each agent writes only to its own `docs/magi/<magi-name>/` directory. Use these 
 
 2. **Independent design phase**
    - Launch the three MAGI agents in parallel.
+   - Once the three MAGI agents are created, each one must be made aware of whether it is running inside a dedicated worktree or the current checkout, including the worktree path and branch name when applicable.
    - Give each agent the same feature context and ask for an independent implementation design.
    - Instruct agents not to read each other's output.
    - Each design must include: proposed approach, files/modules to create or change, data model and interfaces, test strategy, risks and trade-offs, and what evidence would change the agent's mind.
