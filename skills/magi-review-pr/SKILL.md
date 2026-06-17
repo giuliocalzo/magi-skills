@@ -36,6 +36,7 @@ If the environment lists only a fixed set of supported model slugs, use only tho
 
 2. **Independent plan phase**
    - Launch the three MAGI agents in parallel.
+   - Once the three MAGI agents are created, each one must be made aware of whether it is running inside a dedicated worktree or the current checkout, including the worktree path and branch name when applicable.
    - Give each agent the same PR context and ask for an implementation-neutral plan.
    - Instruct agents not to read each other's output.
    - Each plan must include: suspected risk areas, files to inspect, test strategy, and what evidence would change the agent's mind.
